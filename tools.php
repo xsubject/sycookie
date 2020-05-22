@@ -6,7 +6,7 @@ function generate_filepath($key, $netid) {
 }
 
 function is_valid_value($value) {
-	return preg_match("/^([a-f0-9]{64})$/", $hash) == 1
+	return preg_match("/^([a-f0-9]{64})$/", $hash) == 1;
 }
 
 function generate_value($length) {
