@@ -6,6 +6,6 @@ class GetAction extends BaseAction {
 
 	public function execute() {
 		
-		return "get action executed";
+		return "get action executed: ". $this->request['key'];
 	}
 }
