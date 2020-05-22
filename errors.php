@@ -1,0 +1,5 @@
+<?php
+
+define('SYCOOKIE_SUCCESS', 0);
+define('SYCOOKIE_ROUTE_NOT_FOUND', -1);
+define('SYCOOKIE_ARGUMENT_REQUIRED', -2);
