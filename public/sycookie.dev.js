@@ -55,7 +55,7 @@ $(function() {
 		});
 	}
 
-	$scr = $("[syhost*='http']")
+	$scr = $("[syhost]")
 	if ($scr.length > 0) {
 		host = $($scr[0]).attr('syhost');
 		load(host)
