@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script src="public/sycookie.dev.js" syhost="/"></script>
+</head>
+<body>
+	<form>
+		
+		<input style="width:100%;" type="text" readonly="readonly" placeholder="loading..." sycookie="sycookie">
+	</form>
+
+	<script>
+		$(document).on("sycookie", function(event, response) {
+			alert(response.data.key + '='+ response.data.val);
+		})
+	</script>
+</body>
+</html>
