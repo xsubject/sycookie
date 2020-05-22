@@ -3,8 +3,8 @@ require_once 'errors.php';
 
 
 class SyCookie {
-	private $net;
-	private $cookie_name;
+	public $net;
+	public $cookie_name;
 	private $routes;
 
 	function __construct($net, $cookie_name) {
@@ -30,6 +30,7 @@ class SyCookie {
 		}
 
 		try{
+			$this->routes[$nRoute]->caller = $this;
 			$this->routes[$nRoute]->request = $_REQUEST;
 			$result = $this->routes[$nRoute]->execute();
 		} catch (Exception $e) {
